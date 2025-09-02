@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Bank</title>
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    
+    <!-- LINK TAILWIND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .outfit-font{
+        font-family: "Outfit", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="outfit-font h-[100vh] flex flex-col items-center bg-[#f4f5f7]">
+    <!-- COMMON -->
+    <section class="bg-[#FFFFFF] w-full h-110">
+        <!-- NAV -->
+        <nav class="flex justify-between h-21 items-center border-b-1 border-gray-400 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+            <div class="flex ml-4">
+                <img src="./assets/mobile-banking.png" alt="" class="w-13 h-12">
+                <div>
+                    <p class="font-extrabold text-lg">$45000</p>
+                    <p>Available Balance</p>
+                </div>
+
+            </div>
+            <button class="text-white w-26 h-10 rounded-lg bg-[#10B981] shadow-sm hover:bg-blue-200 transition transform active:scale-95 active:shadow-inner mr-4" id="logOut">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log Out
+            </button>
+        </nav>
+        <!-- HERO -->
+        <div class="w-100 mt-8 mx-4">
+            <h2 class="flex font-extrabold text-2xl"><img src="./assets/fire.png" alt="" class="h-6"> &nbsp;Welcome to &nbsp;<span class="text-[#0874F2]"> Mobile Bank</span>!</h2>
+            <p class="text-[#08080880] mt-3 text-base">Enjoy easy and convenient financial services with us. Cashout charge is low and save more.</p>
+        </div>
+        <!-- SERVICE -->
+        <div class="mx-4 mt-4 grid grid-cols-3 grid-rows-2 gap-4">
+            
+            <div class="h-22 w-31 p-3 rounded-xl shadow-md transition transform active:scale-95 active:shadow-inner hover:bg-blue-200 bg-[#0808081a]">
+                <img src="./assets/wallet1.png" alt="" class="mx-auto">
+                <p class="text-center font-medium text-[#08080880] mt-1 text-sm">Add Money</p>
+            </div>
+
+             <div class="h-22 w-31 p-3 rounded-xl shadow-md transition transform active:scale-95 active:shadow-inner hover:bg-blue-200 bg-[#0808081a]">
+                <img src="./assets/send1.png" alt="" class="mx-auto">
+                <p class="text-center font-medium text-[#08080880] mt-1 text-sm">Cashout</p>
+            </div>
+
+             <div class="h-22 w-31 p-3 rounded-xl shadow-md transition transform active:scale-95 active:shadow-inner hover:bg-blue-200 bg-[#0808081a]">
+                <img src="./assets/money1.png" alt="" class="mx-auto">
+                <p class="text-center font-medium text-[#08080880] mt-1 text-sm">Transfer Money</p>
+            </div>
+
+             <div class="h-22 w-31 p-3 rounded-xl shadow-md transition transform active:scale-95 active:shadow-inner hover:bg-blue-200 bg-[#0808081a]">
+                <img src="./assets/bonus1.png" alt="" class="mx-auto">
+                <p class="text-center font-medium text-[#08080880] mt-1 text-sm">Get Bonus</p>
+            </div>
+
+             <div class="h-22 w-31 p-3 rounded-xl shadow-md transition transform active:scale-95 active:shadow-inner hover:bg-blue-200 bg-[#0808081a]">
+                <img src="./assets/purse1.png" alt="" class="mx-auto">
+                <p class="text-center font-medium text-[#08080880] mt-1 text-sm">Pay Bill</p>
+            </div>
+
+             <div class="h-22 w-31 p-3 rounded-xl shadow-md transition transform active:scale-95 active:shadow-inner hover:bg-blue-200 bg-[#0808081a]">
+                <img src="./assets/transaction1.png" alt="" class="mx-auto">
+                <p class="text-center font-medium text-[#08080880] mt-1 text-sm">Transaction</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Bill Notification -->
+    <section>
+       <div class="flex justify-between">
+        <h3>Latest Payment</h3>
+        <p>View All</p>
+       </div>
+
+       <div>
+            <div class="flex ml-4">
+                <img src="./assets/purse1.png" alt="">
+                <div>
+                    <p class="font-extrabold text-lg">Electricity Bill</p>
+                    <p>Available Balance</p>
+                </div>
+
+            </div>
+            <button>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+        </nav>
+    
+
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>

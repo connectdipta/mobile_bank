@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Bank</title>
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    
+    <!-- LINK TAILWIND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .outfit-font{
+        font-family: "Outfit", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="outfit-font bg-[#f4f5f7] h-[100vh] flex justify-center items-center flex-col">
+    <section>
+
+       <div class="bg-[url(./assets/bg.png)] h-35 w-81 flex justify-center items-center m-auto">
+         <img src="./assets/Group.png" alt="" class="w-20 h-18">
+       </div>
+       <!-- LOGIN FORM -->
+        <form class = "bg-white rounded-2xl shadow-md p-5 w-98 bg-cover">
+            <div>
+                <label class="font-semibold mt-6 text-base">Mobile Number</label>
+                <br>
+                <input type="text" placeholder="Enter your number" class="input mt-3 mb-3 rounded-3xl w-82 h-13 text-base focus:outline-none focus:ring-2 focus:ring-blue-200" id="number"/>
+            </div>
+            <div>
+                <label class="font-semibold text-base">4 Digit Pin</label>
+                <br>
+                <input type="text" placeholder="Enter 4 Digit Pin" class="input mt-3 mb-5 rounded-3xl w-82 h-13 text-base focus:outline-none focus:ring-2 focus:ring-blue-200" id="pin"/>
+            </div>
+            <button class="btn btn-primary bg-[#0874f2] w-82 h-13 hover:bg-blue-400 border-none rounded-3xl mb-4 text-xl transition transform active:scale-95 active:shadow-inner" id="Login">Login</button>
+        </form>
+    </section>
+    <script src="./login.js"></script>
+</body>
+</html>
